@@ -34,3 +34,4 @@ response.css("div.quote") *透過找尋<div>來獲得標籤，且這些div裡需
 quote = response.css("div.quote")[0]
 text = quote.css("span.text::text").get() *使用css選擇器找尋所有包含"quote"的元素，並且要符合"span.text::text"的條件，"span.text::text"表示查詢所有class帶有text且在<span>裡的元素*
 author = quote.css("small.author::text").get()
+tags = quote.css("div.tags a.tag::text").getall()
